@@ -1,1 +1,1 @@
-const yelpApiKey 
+const yelpApiKey = 3;
