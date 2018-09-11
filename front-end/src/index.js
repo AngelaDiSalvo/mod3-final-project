@@ -29,9 +29,14 @@ function initMap() {
       nestedlocations.push(business.coordinates.latitude)
       nestedlocations.push(business.coordinates.longitude)
       nestedlocations.push(++i)
-
       locations.push(nestedlocations)
+
+      // create local const for the event listener to create a function to post
+      // nestedlocations.push(business.image_url)
+
     })
+
+
 
     let map = new google.maps.Map(document.getElementById('map'), {
       zoom: 10,
