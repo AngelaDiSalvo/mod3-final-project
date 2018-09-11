@@ -17,12 +17,13 @@ function initMap() {
       // debugger
       return business.rating > 3
     })
-    // debugger
+    debugger
 
     let locations = []
 
     highRatings.forEach(function(business, i) {
       //grab the name
+      // debugger
       let nestedlocations = []
       nestedlocations.push(business.name)
       nestedlocations.push(business.coordinates.latitude)
