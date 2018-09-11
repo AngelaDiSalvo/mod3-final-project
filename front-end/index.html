@@ -2,41 +2,74 @@
 <html>
 
 <head>
-  <meta charset="utf-8">
-  <title>JavaScript Code Challenge</title>
-  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-  <style>
-    input {
-      font-size: 2rem;
-    }
-  </style>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>3rd Venue</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" media="screen" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css"
+  />
+  <link rel="stylesheet" type="text/css" media="screen" href="./src/styles.css" />
+
 </head>
 
-<body>
-  <div class="container">
-    <div class="row" id="image_content">
-      <div class="card col-md-4"></div>
-      <div id="image_card" class="card col-md-4">
-          <img id="image" data-id/>
-          <h4 id="name"></h4>
-          <span>Likes:
-            <span id="likes">0</span>
-          </span>
-          <button id="like_button">Like</button>
-          <form id="comment_form">
-            <input id="comment_input" type="text" name="comment" placeholder="Add Comment"/>
-            <input type="submit" value="Submit"/>
-          </form>
-          <ul id="comments">
 
-          </ul>
+<body>
+
+  <div class="modal modal-open">
+    <div class="modal-inner">
+      <div class="modal-content">
+        <div class="modal-close-icon">
+          <a href="javascript:void(0)" class="close-modal">
+            <i class="fa fa-times" aria-hidden="true"></i>
+          </a>
+        </div>
+        <div class="modal-content-inner">
+          <h4>This is the heading</h4>
+          <form>
+            <div class="row">
+              <div class="six columns">
+                <label for="exampleEmailInput">Your email</label>
+                <input class="u-full-width" type="email" placeholder="test@mailbox.com" id="exampleEmailInput">
+              </div>
+              <div class="six columns">
+                <label for="exampleRecipientInput">Reason for contacting</label>
+                <select class="u-full-width" id="exampleRecipientInput">
+                  <option value="Option 1">Questions</option>
+                  <option value="Option 2">Admiration</option>
+                  <option value="Option 3">Can I get your number?</option>
+                </select>
+              </div>
+            </div>
+            <label for="exampleMessage">Message</label>
+            <textarea class="u-full-width" placeholder="Hi Dave …" id="exampleMessage"></textarea>
+            <label class="example-send-yourself-copy">
+              <input type="checkbox">
+              <span class="label-body">Send a copy to yourself</span>
+            </label>
+            <input class="button-primary" type="submit" value="Submit">
+          </form>
+          <p>Donec volutpat nisi nisl, sit amet facilisis enim lobortis sed. </p>
+        </div>
+        <hr class="modal-buttons-seperator">
+        <div class="modal-buttons">
+          <button class="button close-modal">Cancel</button>
+          <button class="button button-primary close-modal">OK</button>
+        </div>
       </div>
-      <div class="card col-md-4"></div>
     </div>
   </div>
 
-  <script type="text/javascript" src='src/index.js'></script>
-  </body>
+  <main class="container demo-container">
+    <br>
+    <button class="button open-modal">Launch modal window</button>
+  </main>
+
+
+
+
+  <script src="src/skeleton.js"></script>
+  <script src="./src/index.js"></script>
+
+</body>
+
 </html>
